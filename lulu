@@ -1,0 +1,87 @@
+Skip to Play Sketch
+Cookies
+The p5.js Editor uses cookies. Some are essential to the website functionality and allow you to manage an account and preferences. Others are not essential—they are used for analytics and allow us to learn more about our community. We never sell this data or use it for advertising. You can decide which cookies you would like to allow, and learn more in our Privacy Policy.
+
+
+Allow All
+
+Allow Essential
+
+Sour fragment copy
+by luanysilva
+
+luanysilva
+My Stuff
+Settings
+Log Out
+
+Arquivo
+Novo
+Salvar
+Exemplos
+Editar
+Organizar Código
+Procurar
+Esboço
+Adicionar Arquivo
+Adicionar Pasta
+Settings
+Preferences
+Language
+Ajuda
+Atalhos de Teclado
+Referência
+Sobre
+
+
+sketch.js
+1
+function setup() {
+2
+  createCanvas(400, 400);
+3
+}
+4
+​
+5
+function inicializaCores(){
+6
+  background("white");
+7
+  fill("black");
+8
+  textSize(64);
+9
+  textAlign(CENTER,CENTER);
+10
+}
+11
+​
+12
+function draw() {
+13
+  inicializaCores();
+14
+  
+15
+  let maximo = width;
+16
+  let minimo = 1;
+17
+  //mouseX, 0, width ==> 0, palavra.length
+18
+  let palavra = "Caminhante";
+19
+  let quantidade = map(mouseX, 0, width, 1, palavra.length);
+20
+  //console.log(quantidade);
+21
+  let parcial = palavra.substring(0,quantidade);
+22
+  text(parcial,200,200);
+23
+}
+24
+​
+Não há mensagens de Lint
+Linha atuallinha 1
